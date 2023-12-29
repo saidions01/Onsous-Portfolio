@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf7322d288.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                        <a href="./About.html">About</a>
+                        <a href="./Services.html">Services</a>
+                        <a href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <div class="cont">
+
+                <div class="header-text">
+
+                    <p>
+                        SOFTWARE DEVELOPER
+                    </p>
+                    <h1>
+                        Hi, I'm <span>Ons</span> <br> Saidi
+                        from Tunisia
+                    </h1>
+
+                  
+                </div>
+                <img id="me" src="me1.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">
+                        About Me
+                    </h1>
+                    <h1 id="profile">Profile</h1>
+                    <p style="font-size: 30px;">
+                        Embark on a journey through innovation, design, and passion. I'm SOFTWARE DEVELOPER dedicated to turning ideas into captivating experiences. Whether you're here to explore my portfolio, learn more about my journey, or simply connect, I'm thrilled to have you.
+
+                    </p>
+               
+                 
+             
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="final">
+
+        <p>
+            Every project tells a story, and I invite you to be part of the narrative. <br>
+             Let's create, inspire, and build together. Feel free to roam around, and if you have any questions or ideas to share, I'm just a click away.
+
+
+<br>
+<br>
+
+Thank you for stepping into my digital realm. Let's make something extraordinary!
+        </p>
+    </div>
+
+<div class="copyright">
+    <p>
+        Copyright © Ons . 
+    </p>
+</div>
+
+
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+
+        }
+    </script>
+</body>
+
+</html>

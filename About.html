@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                        <a href="./About.html">About</a>
+                        <a href="./Services.html">Services</a>
+                        <a href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <div class="cont">
+
+                <div class="header-text">
+
+                    <p>
+                        "I am a determined and motivated software engineering student, passionate about technology and innovation in the field of computer science. I enjoy taking initiatives and seeking new challenges and opportunities. I am currently looking for an internship that will provide me with practical experience in the domain. I possess a strong technical background and soft skills that will enable me to seamlessly integrate into the team and contribute effectively to projects."
+                    </p>
+                  
+
+                  
+                </div>
+                <img id="me" src="me1.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">
+                        About Me
+                    </h1>
+           
+                  
+                    <h1 id="ac">
+                        Academic career
+                    </h1>
+                    <p>
+                        I am a software engineering student at the Higher Institute of Applied Science and Technology of
+                        Sousse . In addition, I am
+                        one of the 27 recipients of the Thomas Jefferson Scholarship Program's 2023–2024 cohort at
+                        Minnesota State University, Mankato, where I am majoring in computer information science.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Creating Websites </li>
+                            <li><span>App Development</span><br>Building Android/ios applications </li>
+                            <li><span>UI/UX </span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Fist Internship at Pixelium</li>
+                            <li><span>2022</span><br>Second Internship in US </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2022</span><br>integrated preparation cycle</li>
+                            <li><span>2022-2023</span><br>first year of engineering cycle</li>
+                            <li><span>2023-2024</span><br>Exchange Program in the United States</li>
+                            <li><span>2024-2026</span><br>second and third years of engineering cycle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copyright">
+        <p>
+            Copyright © Ons . 
+        </p>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+
+        }
+    </script>
+</body>
+</html>
